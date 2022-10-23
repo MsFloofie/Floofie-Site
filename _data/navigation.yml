@@ -1,0 +1,8 @@
+- name: /index
+  link: /
+- name: /about
+  link: /about.html
+- name: /contact
+  link: /contact.html
+- name: /pgp-key
+  link: /pgp.html

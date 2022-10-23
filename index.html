@@ -1,46 +1,11 @@
-<!doctype html>
-	<html>
-		<head>
-			<meta charset="utf-8">
-			<title>floofie</title>
-			<meta http-equiv="X-UA-Compatible" content="IE=edge">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-			
-			<!--uuhhh fuckin heres the funny discord embed lol-->
-			<meta content="floofie.org" property="og:site_name">
-			<meta content="index" property="og:title">
-			<meta content="Cybersecurity amateur and privacy advocate" property="og:description">
-			<meta content="https://floofie.org/" property="og:url">
-			<meta content="https://floofie.org/assets/stare.jpg " property="og:image">
-			<meta content="#43B581" data-react-helmet="true" name="theme-color">
-			<meta charset="utf-8" />
-			<link rel="stylesheet" type="text/css" href="https://floofie.org/assets/main-dark.css">
-			<base href="https://floofie.org/">
-
-		</head>
-
-	<body>
-		 <div class="container">
-			 <header>
-				 <div class="menu">
-					 <ul><li><a href="/">/index</a></li><li><a href="about.html">/about-me</a></li><li><a href="contact/index.html">/contact-me</a></li><li><a href="pgp.html">/pgp-key</a></li></ul>
-				 </div>
-			 </header>
-			 <main>
-				 <h1 id="floof">Floofie</h1>
-				 <head>
-					 <meta property="og:title" content="Floofie's Rambles"/>
-				 </head>
-				 
-				 <br/>  <!-- add line break if there is any content --> 
-				 <ul>
-					<li>[ 2022-06-03 ] <a href="blog/2022/06/03/biohacking.html">Biohacking</a></li>
-				 	<li>[ 2022-05-01 ] <a href="blog/2022/05/01/revamp.html">Site Revamp</a></li>
-				 </ul>
-			 </main>
-			 <footer>
-			 
-			 </footer>
-		</div>
-	</body>
-</html>
+---
+layout: default
+title: Floofie
+description: Cybersecurity amateur and privacy advocate
+---
+<br>
+<ul>
+    {% for post in site.posts %}
+    <li>[ {{ post.date | date_to_string }} ] <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}  
+</ul>
