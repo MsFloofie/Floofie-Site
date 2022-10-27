@@ -1,3 +1,4 @@
+url: "https://floofie.org"
 plugins:
  - jekyll-sitemap
  - jekyll-seo-tag
