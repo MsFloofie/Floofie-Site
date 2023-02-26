@@ -2,4 +2,4 @@ url: "https://floofie.org"
 plugins:
  - jekyll-sitemap
  - jekyll-seo-tag
-destination: /home/floofie/built_site/
+destination: /var/www/floofie/html
