@@ -1,3 +1,4 @@
 # Jekyll Cache. I don't really want it in the repo. #
 #####################################################
 .jekyll-cache/
+_site/
