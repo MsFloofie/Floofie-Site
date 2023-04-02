@@ -8,7 +8,7 @@ description: i'm depressed
 
 # Backstory
 ---
-On March 1st, 2023 at around 5:00 PM JST, Amano Pikamee [announced that she will be graduating from VOMs](https://www.youtube.com/watch?v=w_ejnHxTWrU). "Graduating" means that she is retiring her character and leaving [VOMS Project](https://voms.net/). Shortly after this announcement, many people (myself included) began to collaborate on archiving her channel before her termination date of March 31st. 2023 JST. On that date, all of her content will be deleted.
+On March 1st, 2023 at around 5:00 PM JST, Amano Pikamee [announced that she will be graduating from VOMs](https://twitter.com/VOMS_Project/status/1630917777111252995). "Graduating" means that she is retiring her character and leaving [VOMS Project](https://voms.net/). Shortly after this announcement, many people (myself included) began to collaborate on archiving her channel before her termination date of March 31st. 2023 JST. On that date, all of her content will be deleted.
 
 # yt-dlp
 ---
