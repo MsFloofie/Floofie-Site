@@ -16,14 +16,16 @@ body {
     font-size: 12.5px;
     color: $color_1;
     text-align: left;
-    line-height: 1.5 !important; }
+    line-height: 1.5 !important; 
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-size: 12.5px;
     margin: 0px;
     margin-top: 22px;
     font-weight: bold;
-    color: $color_1; }
+    color: $color_1; 
+}
       
 @mixin text {
     margin: 0px;
