@@ -23,4 +23,4 @@ Breakdown of the command above:
  <p> --embed-metadata: Embed metadata to the video file.</p>
  <p> --download-archive: Download only videos not listed in the archive file. Record the IDs of all to prevent redownloading videos.</p>
  <p> --merge-output-format mp4: Merge thumbnail into the file and save as an MP4.</p><br>
-<p>Utilizing this command, I was able to download every uploaded video, livestream, membership stream, and short. This took about 14 days and totaled over 2.7TB of youtube content, and 907GB of her Twitch content.</p><br>
+<p>Utilizing this command, I was able to download every uploaded video, livestream, membership stream, and short. This took about 14 days and totaled over 2.7TB of youtube content, and 907GB of her Twitch content.</p>
