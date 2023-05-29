@@ -1,4 +1,5 @@
 url: "https://floofie.org"
+permalink: /:title/
 plugins:
  - jekyll-sitemap
  - jekyll-seo-tag
