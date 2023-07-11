@@ -8,29 +8,26 @@ $color_2: #000000;
 // //
 // Main stuff
 // //
+      
+@mixin text {
+    margin: 0px;
+    color: $color_1;
+    font-family: "Fixedsys Excelsior 3.01", monospace;
+    font-size: 12.5px;
+    text-align: left;
+}
 
 body {
     background-color: $color_2;
     margin: 0 auto;
     padding: 0;
-    font-family: "Fixedsys Excelsior 3.01", monospace;
-    font-size: 12.5px;
-    color: $color_1;
-    text-align: left;
     line-height: 1.5 !important; 
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-size: 12.5px;
-    margin: 0px;
+    @include text;
     margin-top: 22px;
     font-weight: bold;
-    color: $color_1; 
-}
-      
-@mixin text {
-    margin: 0px;
-    color: $color_1;
 }
 
 ul, ol {
@@ -45,8 +42,8 @@ p {
 }
 
 a {
+    @include text;
     text-decoration: underline;
-    color: $color_1; 
     &:hover {
         color: $color_2;
         background-color: $color_1;
@@ -102,6 +99,7 @@ footer {
 // Lists
 // //
 
+//what the fuck even is this?
 :not(.menu) > ul {
     list-style: none;
     list-style-type: none;
@@ -112,11 +110,11 @@ footer {
     }
 }
 
-
 // //
 // Header/Navigation
 // //
 
+//HOLY SHIT WHAT AM I DOING
 .menu {
     border-top: dashed 1px $color_1;
     border-bottom: dashed 1px $color_1;
