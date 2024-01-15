@@ -3,7 +3,6 @@ layout: default
 title: Biohacking
 description: becoming a cyborg
 ---
----
 
 # What is Biohacking?
 ---

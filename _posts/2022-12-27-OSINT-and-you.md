@@ -3,8 +3,6 @@ layout: default
 title: OSINT and You
 description: OSINT technologies and how to use them.
 ---
----
-
 
 # What is OSINT?
 ---
