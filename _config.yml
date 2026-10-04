@@ -1,5 +1,7 @@
 url: "https://floofie.org"
 permalink: /:title/
+exclude: 
+  - README.md
 plugins:
  - jekyll-sitemap
  - jekyll-seo-tag
