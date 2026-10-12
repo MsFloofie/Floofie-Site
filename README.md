@@ -12,6 +12,5 @@ Then run:
 ```bash
   git clone https://github.com/MsFloofie/Floofie-Site.git
   cd Floofie-Site
-  bundle install
   jekyll build -d $(mktemp -d)
 ```
