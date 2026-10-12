@@ -5,3 +5,5 @@ exclude:
 plugins:
  - jekyll-sitemap
  - jekyll-seo-tag
+include:
+  - _redirects
