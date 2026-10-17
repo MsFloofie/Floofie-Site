@@ -3,7 +3,7 @@
 
 $color_1: #dbdbdb;
 $color_2: #000000;
-
+$border_style: dashed 1px $color_1;
 
 // //
 // Main stuff
@@ -12,16 +12,17 @@ $color_2: #000000;
 @mixin text {
     margin: 0px;
     color: $color_1;
-    font-family: "Fixedsys Excelsior 3.01", monospace;
-    font-size: 12.5px;
+    font-family: monospace;
+    font-size: 13px;
     text-align: left;
 }
 
 body {
     background-color: $color_2;
     margin: 0 auto;
-    padding: 0;
-    line-height: 1.5 !important; 
+    line-height: 1.5; 
+    width: 90%;
+    max-width: 600px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -55,27 +56,16 @@ a {
 // Layout
 // //
 
-.container {
-    width: 90%;
-    max-width: 600px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 header {
-    margin-top: 25px;
-    margin-bottom: 10px;
-    p {
-        text-align: left;
-        margin: 0;
-    }
+    margin: 25px auto 10px;
+    text-align: left;
 }
 
 footer {
-    color: $color_1;
-    border-top: dashed 1px $color_1;
+    border-top: $border_style;
     margin: 20px auto 15px;
     padding-top: 10px;
+    padding-bottom: 25px;
     text-align: right;
 }
 
@@ -102,11 +92,10 @@ footer {
 //what the fuck even is this?
 :not(.menu) > ul {
     list-style: none;
-    list-style-type: none;
     padding-left: 0;
-    & > li:before {
+    li::before {
         content: "-";
-        margin-right: 9px;
+        margin-right: 5px;
     }
 }
 
@@ -116,21 +105,19 @@ footer {
 
 //HOLY SHIT WHAT AM I DOING
 .menu {
-    border-top: dashed 1px $color_1;
-    border-bottom: dashed 1px $color_1;
+    border-top: $border_style;
+    border-bottom: $border_style;
     margin-bottom: 25px;
     ul {
-        margin-top: 12px;
-        margin-bottom: 12px;
+        margin: 12px 0;
         text-align: right;
-        list-style-type: none;
+        list-style: none;
         padding-left: 0px;
         li {
             display: inline;
             margin-left: 10px;
             a {
                 text-decoration: none;
-                color: $color_1;
                 &:hover{
                     text-decoration: none;
                     color: $color_2;
@@ -149,14 +136,8 @@ footer {
 pre {
     background-color: $color_2;
     border: none;
-    padding: 0px;
     overflow: auto;
     font-size: 12.5px;
     color: #ffffffa6;
     line-height: 1.7 !important;
-}
-
-.highlight .c {
-    color: #999988;
-    font-style: italics;
 }
