@@ -1,20 +1,25 @@
 ---
 layout: default
-title: Floofie
-description: Cybersecurity amateur and privacy advocate
+title: Privacy Policy
+description: A policy that is private
 ---
 <h1>What information is collected?</h1>
-<p>the only information that i collect for the website is the basic Nginx log file. here's an example:</p>
-<pre>0.0.0.0 - - [01/Jan/1970:00:00:00 -0500] "GET / HTTP/2.0" 200 914 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/113.0"</pre>
-<p>Nginx will log your IP, time, requested page, and browser. i retain logs for ~60 days. no cookies are kept on my server.</p>
-<p>as well, i use Cloudflare to protect some of my websites. they probably undermine everything i say here and collect other information for analytics. however, i never look at their stuff. take a look at <a href="https://www.cloudflare.com/privacypolicy/">their privacy policy</a> for more information.</p>
-<br>
+<p>For my root domain (floofie.org), I run my website through <a href="https://pages.cloudflare.com/">Cloudflare Pages</a>. I'm sure there's some sort of analytics through Cloudflare, but I can't be bothered to look for it. For what data Cloudflare may collect, take a look at their <a href="https://www.cloudflare.com/privacypolicy/">privacy policy</a>.</p>
+<p>For any of my subdomains (*.floofie.org), I do log any requests made. An example log of a request looks like this:</p>
+<pre><code>{"level":"info","ts":1234567890,"logger":"http.log.access.log0","msg":"handled request","request":{"remote_ip":"127.0.0.1","remote_port":"12345","client_ip":"1","proto":"HTTP/1.1","method":"GET","host":"example.com","uri":"/","headers":{"User-Agent":["curl/8.14.1"],"Accept":["*/*"]}},"bytes_read":0,"user_id":"","duration":0.000074682,"size":0,"status":200,"resp_headers":{"Content-Type":[],"Server":["Caddy"],"Connection":["close"],"Location":["https://example.com/"]}}
+</code></pre>
+<p>The information included is:</p>
+<ul>
+    <li>Time of request</li>
+    <li>IP addresses</li>
+    <li>User Agent</li>
+    <li>Request method, URI, data, and whatever my server response back with</li>
+</ul>
+<p>This is stored for ~30 days at most, unless I delete it earlier.</p>
 <h1>What is this information used for?</h1>
-<p>if you're a normal user, literally nothing. i barely look at the logs.</p>
-<p>if any attempted abuse on my services is detected, you could be blocked and/or reported to <a href="https://abuseipdb.com">AbuseIPDB</a>.</p>
-<br>
+<p>If you're a normal user, mostly nothing. I seldomly look at any of the logs except through <a href="https://goaccess.io/">goaccess</a>.</p>
+<p>If any attempted abuse on my services is detected, you could be blocked and/or reported to <a href="https://abuseipdb.com">AbuseIPDB</a>.</p>
 <h1>How do I know you won't sell my information?</h1>
-<p>you can't. if you don't trust me, there is a <a href="http://floofiestl4hrbxamim2onzjgrehrv4juwv22fyiiguotoahmitnogid.onion/">onion service</a> available for users needing privacy. the onion service bypasses Cloudflare entirely.</p>
-<br>
+<p>You can't, but I have zero reason to sell any information.</p>
 <br>
 <p>for any concerns, you can <a href="/contact">contact me</a>.</p>
