@@ -5,6 +5,7 @@ $color_1: #dbdbdb;
 $color_2: #000000;
 $border_style: dashed 1px $color_1;
 
+
 // //
 // Main stuff
 // //
@@ -19,7 +20,7 @@ $border_style: dashed 1px $color_1;
 
 body {
     background-color: $color_2;
-    margin: 0 auto;
+    margin: 0px auto;
     line-height: 1.5; 
     width: 90%;
     max-width: 600px;
@@ -92,12 +93,13 @@ footer {
 //what the fuck even is this?
 :not(.menu) > ul {
     list-style: none;
-    padding-left: 0;
+    padding: 0px;
     li::before {
         content: "-";
         margin-right: 5px;
     }
 }
+
 
 // //
 // Header/Navigation
@@ -108,26 +110,26 @@ footer {
     border-top: $border_style;
     border-bottom: $border_style;
     margin-bottom: 25px;
-    ul {
-        margin: 12px 0;
-        text-align: right;
+
+    ul  {
+        margin: 12px 0px;
         list-style: none;
-        padding-left: 0px;
-        li {
-            display: inline;
-            margin-left: 10px;
-            a {
+        padding: 0px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    a   {
+        text-decoration: none;
+            display: inline-block;
+            &:hover{
                 text-decoration: none;
-                &:hover{
-                    text-decoration: none;
-                    color: $color_2;
-                    background-color: $color_1;
-                }
+                color: $color_2;
+                background-color: $color_1;
             }
-        }
     }
 }
-
+    
 
 // //
 // Code and syntax highlighting
